@@ -10,8 +10,22 @@ import org.xutils.http.RequestParams;
  */
 
 public class URL {
-    public static String UpLoadImageUrl="http://192.168.1.101:9094/ReceiverDemo";
-    public static String test="http://192.168.1.101:9094/test";
+    public static String url="http://192.168.1.7:9094/";
+    /*public static String UpLoadImageUrl="http://192.168.1.101:9094/ReceiverDemo";*/
+    public static String UpLoadImageUrl=url+"ReceiverDemo";
+    public static String test=url+"test";
+
+    public static String CheckLoginUrl=url+"CheckLogin";
+
+    public static String GetGradeAndClassListUrl=url+"GetGradeAndClassList";
+
+    public static String GetTestListByClassUrl=url+"GetTestListByClass";
+
+    public static String GetStudentByNumUrl=url+"GetStudentByNum";
+
+    public static String InsertTestInfoUrl=url+"InsertTestInfo";
+
+    public static String UpdateTeacherInfoUrl=url+"UpdateTeacherInfo";
 
 
     public static void GetData(RequestParams RP , final HttpCallback hc)

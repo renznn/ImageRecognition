@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.imagerecognition.ResultActivity">
+    <Button
+        android:id="@+id/result_return"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="返回"/>
+
+        <TextView
+            android:id="@+id/result_paper_type"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全国卷"/>
+    <LinearLayout
+        android:id="@+id/result_info"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/result_paper_type"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名："/>
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/result_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学号："/>
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/result_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0001"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/result_list"
+        android:layout_below="@id/result_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+</RelativeLayout>
